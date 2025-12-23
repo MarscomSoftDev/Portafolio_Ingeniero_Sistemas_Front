@@ -6,6 +6,7 @@
     <title>Jonathan Martinez | Frontend Developer | React</title>
   </head>
   <body>
+    <!-- header -->
     <header class="header">
       <nav class="header_nav">
         <a href="#home" class="header_nav_logo_icono">
@@ -27,11 +28,88 @@
             placeholder="Buscar..."
             aria-label="Buscar contenido"
           />
-          <button type="submit" aria-label="Buscar">
+          <button
+            type="submit"
+            aria-label="Buscar"
+            class="header_nav_search_button"
+          >
             <img src="assets/icons/search.png" alt="" />
           </button>
         </form>
       </nav>
     </header>
+
+    <main id="home">
+      <!-- ================= ABOUT ME ================= -->
+      <section id="about" class="about">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy desarrollador frontend enfocado en crear interfaces web modernas,
+          accesibles y responsivas. Trabajo con HTML, CSS y JavaScript, y
+          actualmente estoy en proceso de aprendizaje de React.
+        </p>
+      </section>
+
+      <!-- ================= SKILLS ================= -->
+      <section id="skills" class="skills">
+        <h2>Skills</h2>
+
+        <ul class="skills_list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript (básico)</li>
+          <li>Responsive Design</li>
+          <li>Git & GitHub</li>
+          <li>React (en formación)</li>
+        </ul>
+      </section>
+
+      <!-- ================= PROYECTOS ================= -->
+      <section id="projects" class="projects">
+        <h2>Proyectos</h2>
+
+        <article class="project_card">
+          <h3>Portafolio personal</h3>
+          <p>
+            Sitio web personal desarrollado con HTML y CSS, enfocado en
+            semántica, accesibilidad y diseño responsive.
+          </p>
+          <a href="#" target="_blank" rel="noopener">Ver proyecto</a>
+        </article>
+
+        <article class="project_card">
+          <h3>Landing Page</h3>
+          <p>
+            Landing page optimizada para conversión y SEO, con diseño moderno y
+            estructura clara.
+          </p>
+          <a href="#" target="_blank" rel="noopener">Ver proyecto</a>
+        </article>
+      </section>
+
+      <!-- ================= CONTACTO ================= -->
+      <section id="contact" class="contact">
+        <h2>Contacto</h2>
+
+        <form class="contact_form">
+          <label>
+            Nombre
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Mensaje
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
