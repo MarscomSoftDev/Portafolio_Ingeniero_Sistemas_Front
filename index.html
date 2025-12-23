@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Jonathan Martinez | Frontend Developer | React</title>
   </head>
   <body>
     <header class="header">
       <nav class="header_nav">
-        <a href="#" class="header_nav_logo_icono"></a>
+        <a href="#home" class="header_nav_logo_icono">
+          <span class="header_nav_logo_icono_span_iniciales">&lt;C /&gt;</span>
+          <span class="header_nav_logo_icono_span_nombre"
+            >Jonathan Martinez</span
+          >
+        </a>
         <ul class="header_nav_ul">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li class="nav-search">
-            <input
-              type="text"
-              placeholder="Buscar..."
-              aria-label="Buscar contenido"
-            />
-            <button aria-label="Buscar">🔍</button>
-          </li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#tiktok">Tiktok</a></li>
+          <li><a href="#instagram">Instagram</a></li>
         </ul>
+        <form class="header_nav_formulario_buscar" role="search">
+          <input
+            type="search"
+            placeholder="Buscar..."
+            aria-label="Buscar contenido"
+          />
+          <button type="submit" aria-label="Buscar">
+            <img src="assets/icons/search.png" alt="" />
+          </button>
+        </form>
       </nav>
     </header>
   </body>
